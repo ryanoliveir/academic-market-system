@@ -1,18 +1,15 @@
 #pragma once
 #include <string>
 
-class Product {
+class CashierOperator {
     private: 
         std::string name;
-        float price;
         int id;
     
     public:
-        Product();
-        Product(std::string name, float price, int id);
-
+        CashierOperator();
+        CashierOperator(std::string name, int id);
         std::string getName() const;
-        float getPrice() const;
         int getId() const;
 };
 
